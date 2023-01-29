@@ -1,0 +1,2 @@
+CREATE TABLE base_table AS (SELECT a.id_invoice, a.tanggal, a.id customer, a.id barang, a. jumlah barang, a.unit, a.harga, a.mata_ uang, a.brand_id, a.lini, a.id _distributor, b.level, b.nama, b.cabang_sales, b.group, c. nama_barang FROM penjualan a LEFT JOIN pelanggan b ON b.id_customer
+a.id customer LEFT JOIN barang c ON c.ode barang = a.id barang );
