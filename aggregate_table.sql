@@ -1,0 +1,2 @@
+CREATE TABLE aggregate_table as (SELECT id_invoice, tanggal, jumlah barang,unit, harga, lini,id distributor, nama as custName, cabang_sales, nama_barang, jumlah_barang*harga as total_sales FROM base_table GROUP by
+1,2,3,4,5,6,7,8,9, 10);
